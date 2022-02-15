@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+<?php 
+
+// Json Daten in Arrays gespeichert
+	$namen = array( 'Product1' , 'Product2' , 'Product3', 'Product4'); 
+		$namen_objekt = json_decode($namen);
+	$price = array(  123.50 , 45 , 13, 55); 
+		$price_objekt = json_decode($price);
+	$fragile = array(  true , false); 
+		$fragile_objekt = json_decode($fragile);
+	$timesPurchased = array( 150, 1241, 772, 950); 
+		$timesPurchased_objekt = json_decode($timesPurchased);
+	$otherCountry = array( countries.json);
+		
+// if abfragen zur webanwendung
+
+	if ( $price == 123.50) {
+		$namen_objekt = Product1
+	};
+	
+	if ( $price == 13) {
+		$namen_objekt = Product3
+	};
+	
+	if ( $timesPurchased == 1241) {
+		$namen_objekt = Product3
+	};
+	
+
+
+?>	
+
+<!-- HTML Aufbau für Webanwendung -->
+	
+<h1>Analyse Liste</h1>
+
+
+<div>
+  <input type="text" id="DE" name="German Products">
+  <label for="DE">German Products</label>
+</div>
+
+<div>
+  <input type="text" id="OtherCountry" name="OtherCountry">
+  <label for="OtherCountry">Chinese Products</label>
+</div>
+
+<div>
+  <input type="text" id="Price" name="Price">
+  <label for="Price">Price/Teuerste</label>
+</div>
+
+<div>
+  <input type="text" id="Price2" name="Price2">
+  <label for="Price2">Price/Günstigste</label>
+</div>
+
+<div>
+  <input type="checkbox" id="Fragile" name="Fragile">
+  <label for="Fragile">Fragile</label>
+</div>
+
+
+</div>
+  <input type="text" id="timesPurchased" name="timesPurchased">
+  <label for="timesPurchased">Meisten Verkauft</label>
+</div>
+
+
+<br>
+<br>
+
+<input type="submit" value="Ausgeben">
+
+
+
+</body>
+</html>

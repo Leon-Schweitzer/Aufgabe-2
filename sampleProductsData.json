@@ -1,0 +1,39 @@
+
+	{
+		"name" : "product1",
+		"countryOfOrigin" : "DE",
+		"price": 123.50,
+		"isFragile": true,
+		"timesPurchased": 150
+	}
+	{
+		"name" : "product2",
+		"countryOfOrigin" : "DE",
+		"price": 45,
+		"isFragile": false,
+		"timesPurchased": 1241
+	}
+	{
+		"name" : "product3",
+		"countryOfOrigin" : "ES",
+		"price": 13,
+		"isFragile": false,
+		"timesPurchased": 772
+	}
+
+
+[
+	{
+		"mostExpensiveProduct" : "product1",
+		"cheapestProduct" : "product3",
+		"mostPopularProduct": "product2",
+		"germanProducts": [
+		"product1",
+		"product2"
+		],
+		"chineseProducts":[],
+		"containsFragileProducts": true
+	}
+]
+
+
